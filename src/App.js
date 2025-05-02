@@ -1,19 +1,18 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import ProjectList from './components/Project';
 import TaskManager from './components/Login'; 
 import Homepage from './components/Homepage';
 
 const App = () => {
     return (
-        <BrowserRouter basename='/'>
+        <HashRouter>
             <Routes>
-                <Route path="/projects" element={<ProjectList/>} />
-                <Route path="/tasks" element={<TaskManager/>} />
-                <Route path="/" element={<Homepage/>} />
+                <Route path="/projects" element={<ProjectList />} />
+                <Route path="/tasks" element={<TaskManager />} />
+                <Route path="/" element={<Homepage />} />
             </Routes>
-        </BrowserRouter>
+        </HashRouter>
     );
 };
-
 export default App;

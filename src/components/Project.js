@@ -169,7 +169,7 @@ const TaskItem = ({
                         </Grid>
 
                         <Grid item xs={12} sm={4}>
-                            <Typography variant="subtitle2" color="text.secondary">Due Date</Typography>
+                            <Typography variant="subtitle2" color="text.secondary">Completion Date</Typography>
                             <Typography variant="body2">{formatDate(task.completionDate || task.completedAt)}</Typography>
                         </Grid>
 
